@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica AnimaVet</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+     
+        <nav>
+            <a href="#servicos"><h2 class="botao">Serviços</h2></a>
+            <a href="#cadastro"><h2 class="botao">Cadastro</h2></a>
+        </nav>
+        <h1>ANIMALET</h1>
+        <figure>
+            <img src="./img/cat.jpg.jpg" width="50%" alt="Foto do gatinho">
+        </figure><hr>
+    </header>
+    <main>
+        <h2 id="servicos">SERVIÇOS </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serviços</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>    
+            <tr>
+                <td>Banho e Tosa</td>
+                <td>R$ 100</td>
+            </tr>
+            <tr>
+                <td>Vacinação</td>
+                <td>R$ 50</td>
+            </tr>
+            <tr>
+                <td>Consulta</td>
+                <td>R$ 120</td>
+            </tr>
+            <tr>
+                <td>Adestramento</td>
+                <td>R$ 450</td>
+            </tr>
+        </table>
+        <hr>
+        <h2 id="cadastro">CADASTRO</h2>
+        <form>
+            <fieldset class="animal">
+                <legend>Dados do Animalzinho</legend>
+                <label for="nome">Nome do Pet: </label><br>
+                <input type="text"  placeholder="Bebê"><br>
+                <div>
+                    <input type="radio" name="tipo" id="tipo">
+                    <label for="tipo">Cachorro</label>
+                    <input type="radio" name="tipo" id="tipo">
+                    <label for="tipo">Gato</label>
+                    <input type="radio" name="tipo" id="tipo">
+                    <label for="tipo">Cabras</label>
+                </div>
+                <label for="date">Data de Nascimento: </label><br>
+                <input type="date" name="date" id="date"><br>
+                <label for="humor">Qual o humor do seu Pet: </label><br>
+                <select name="humor" id="humor">
+                    <option value="humor" selected>Brabo</option>
+                    <option value="humor">Dócil</option>
+                    <option value="humor">Tonto</option>
+                </select>
+            </fieldset>
+            <fieldset class="dono">
+                <legend>Dados do Dono</legend>
+                <label for="namedono">Nome do Dono:</label><br>
+                <input type="text" name="namedono" placeholder="Manoel Gomes"><br>
+                <label for="tel">Tel:</label><br>
+                <input type="tel" name="tel" id="tel"><br>
+                <label for="email">Email: </label><br>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <div class="submit">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h3>Desenvolvido por Gabriel Yamaoka</h3>
+    </footer>
+</body>
+</html>
